@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav{
+    width: 1440px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px;
+    background: #1F1E1B;
+
+    .about{
+        color: #FF8303;
+
+    }
+
+    h1{
+        font-family: 'Inconsolata';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 21px;
+        color: #F0E3CA;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .nlogo{
+        width: 100px;
+        height:30px;
+    }
+
+}
+
+.main{
+    width: 1440px;
+    height: 720px;
+    background: radial-gradient(100% 100% at 50% 100%, #1F1E1B 21.52%, #1B1A17 100%);
+}
+.wrapper{
+    width: 1440px;
+    height: 1260.7px;
+
+
+.sec1{
+    width: 1440px;
+    height: 228.79px;
+    background: #1F1E1B;
+}
+
+.sec2{
+    width: 1440px;
+    height: 494px;
+    background: radial-gradient(100% 100% at 50% 0.03%, #1F1E1B 27.25%, #1B1A17 100%);
+}
+
+.sec3{
+    width: 1440px;
+    height: 537.91px;
+    background: radial-gradient(100.01% 100.01% at 50% 100.04%, #1F1E1B 31.04%, #1B1A17 100%);
+}
+}
+
+.footer{
+    width: 1440px;
+    height: 274px;
+    background: #1F1E1B;
+}
