@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inconsolata";
+  font-style: normal;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -20,19 +24,22 @@ body {
   padding: 0px 120px;
   background: #1F1E1B;
 }
-.nav .about {
+.nav .menu ul {
+  width: 532px;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav .menu ul .about {
   color: #FF8303;
 }
-.nav h1 {
-  font-family: "Inconsolata";
-  font-style: normal;
+.nav .menu ul a {
   font-weight: 700;
   font-size: 20px;
   line-height: 21px;
   color: #F0E3CA;
-}
-.nav .menu {
-  display: flex;
 }
 .nav .nlogo {
   width: 100px;
@@ -43,6 +50,33 @@ body {
   width: 1440px;
   height: 720px;
   background: radial-gradient(100% 100% at 50% 100%, #1F1E1B 21.52%, #1B1A17 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.main .namJob {
+  width: 448.25px;
+  height: 178.5px;
+}
+.main .name {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 67px;
+  color: #FF8303;
+}
+.main .job {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: #F0E3CA;
+}
+.main .jobInfo {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  color: #F0E3CA;
 }
 
 .wrapper {
@@ -53,16 +87,154 @@ body {
   width: 1440px;
   height: 228.79px;
   background: #1F1E1B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .sec1 .logo {
+  position: relative;
+  right: 2%;
+}
+.wrapper .sec1 .logoInfo {
+  width: 904px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  color: #F0E3CA;
 }
 .wrapper .sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 1440px;
   height: 494px;
   background: radial-gradient(100% 100% at 50% 0.03%, #1F1E1B 27.25%, #1B1A17 100%);
 }
+.wrapper .sec2 .mySkills {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+  text-align: center;
+  color: #FF8303;
+}
+.wrapper .sec2 .prog {
+  width: 1064px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .sec2 .prog div {
+  width: 200px;
+  height: 300px;
+  background: #21201D;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrapper .sec2 .prog div h1 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+.wrapper .sec2 .prog .imgHtml {
+  fill: #F0E3CA;
+}
+.wrapper .wrapInfo {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  background-color: rgba(33, 32, 29, 0.98);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+}
+.wrapper .bloghead {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+  color: #FF8303;
+}
 .wrapper .sec3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 1440px;
   height: 537.91px;
   background: radial-gradient(100.01% 100.01% at 50% 100.04%, #1F1E1B 31.04%, #1B1A17 100%);
+}
+.wrapper .sec3 .blogrec {
+  width: 200px;
+  height: 3px;
+  background-color: #FF8303;
+}
+.wrapper .sec3 .b {
+  cursor: pointer;
+}
+.wrapper .sec3 .b .wrapInfo {
+  visibility: hidden;
+  transform: translate(-20px, 0%);
+  opacity: 0;
+}
+.wrapper .sec3 .b:hover .wrapInfo {
+  visibility: visible;
+  transform: translate(0px, 0%);
+  transition: 0.2s;
+  opacity: 1;
+}
+.wrapper .sec3 .blogpar {
+  width: 219px;
+  height: 85px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #F0E3CA;
+}
+.wrapper .sec3 .blogp {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: #F0E3CA;
+}
+.wrapper .sec3 .blogbut {
+  color: #F0E3CA;
+  width: 110px;
+  height: 39px;
+  background: #32312E;
+  border-radius: 4px;
+  border: none;
+}
+.wrapper .sec3 .blogimg {
+  width: 320px;
+  height: 320px;
+}
+.wrapper .sec3 .wrapper2 {
+  width: 1440px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.wrapper .sec3 .myWorks {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+  text-align: center;
+  color: #FF8303;
+}
+.wrapper .sec3 .blog1 {
+  background: rgba(33, 32, 29, 0.98);
+  width: 320px;
+  height: 320px;
 }
 
 .footer {
