@@ -241,4 +241,73 @@ body {
   width: 1440px;
   height: 274px;
   background: #1F1E1B;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .nlogoInfo {
+  width: 213px;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  color: #F0E3CA;
+}
+.footer .contactsInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 146px;
+}
+.footer .contactsInfo p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 25px;
+  color: #FF8303;
+  padding: 0 10px;
+}
+.footer .contactsInfo h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+  color: #FF8303;
+}
+.footer .contactsInfo .wrapperfoot {
+  width: 384px;
+  height: 146px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .contactsInfo .wrapperfoot .ukm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer .contactsInfo .wrapperfoot .gitFig {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .contactsInfo .mail {
+  display: flex;
+  flex-direction: row;
+}
+.footer .contactsInfo .uk {
+  display: flex;
+  flex-direction: row;
+}
+.footer .contactsInfo .gitIc {
+  display: flex;
+  flex-direction: row;
+}
+.footer .contactsInfo .figmaIc {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=main.css.map */
