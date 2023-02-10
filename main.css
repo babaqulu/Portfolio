@@ -8,21 +8,30 @@
   list-style: none;
 }
 
-body {
+.wrapperm {
+  width: 100%;
+  height: 300vh;
+  background: #1F1E1B;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav {
-  width: 1440px;
   height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px 120px;
-  background: #1F1E1B;
+}
+@media (max-width: 1130px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 .nav .menu ul {
   width: 532px;
@@ -47,14 +56,20 @@ body {
 }
 
 .main {
-  width: 1440px;
   height: 720px;
-  background: radial-gradient(100% 100% at 50% 100%, #1F1E1B 21.52%, #1B1A17 100%);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
+}
+@media (max-width: 1130px) {
+  .main {
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 .main .namJob {
   width: 448.25px;
@@ -80,13 +95,10 @@ body {
 }
 
 .wrapper {
-  width: 1440px;
   height: 1260.7px;
 }
 .wrapper .sec1 {
-  width: 1440px;
   height: 228.79px;
-  background: #1F1E1B;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,9 +119,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 1440px;
   height: 494px;
-  background: radial-gradient(100% 100% at 50% 0.03%, #1F1E1B 27.25%, #1B1A17 100%);
 }
 .wrapper .sec2 .mySkills {
   font-weight: 700;
@@ -130,7 +140,7 @@ body {
 .wrapper .sec2 .prog div {
   width: 200px;
   height: 300px;
-  background: #21201D;
+  background: #161613;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -143,14 +153,11 @@ body {
   line-height: 37px;
   color: #FFFFFF;
 }
-.wrapper .sec2 .prog .imgHtml {
-  fill: #F0E3CA;
-}
 .wrapper .wrapInfo {
   width: 320px;
   height: 320px;
   position: absolute;
-  background-color: rgba(33, 32, 29, 0.98);
+  background-color: rgba(29, 33, 31, 0.98);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,9 +175,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 1440px;
+  align-items: center;
   height: 537.91px;
-  background: radial-gradient(100.01% 100.01% at 50% 100.04%, #1F1E1B 31.04%, #1B1A17 100%);
+  background-color: lightgreen;
 }
 .wrapper .sec3 .blogrec {
   width: 200px;
@@ -218,8 +225,8 @@ body {
   height: 320px;
 }
 .wrapper .sec3 .wrapper2 {
-  width: 1440px;
   height: 320px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -232,17 +239,14 @@ body {
   color: #FF8303;
 }
 .wrapper .sec3 .blog1 {
-  background: rgba(33, 32, 29, 0.98);
   width: 320px;
   height: 320px;
 }
 
 .footer {
-  width: 1440px;
+  width: 100%;
   height: 274px;
-  background: #1F1E1B;
   display: flex;
-  justify-content: center;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
@@ -252,7 +256,7 @@ body {
   height: 146px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-weight: 400;
   font-size: 20px;
   line-height: 21px;
@@ -261,7 +265,7 @@ body {
 .footer .contactsInfo {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 146px;
 }
 .footer .contactsInfo p {
@@ -279,7 +283,7 @@ body {
 }
 .footer .contactsInfo .wrapperfoot {
   width: 384px;
-  height: 146px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -287,12 +291,12 @@ body {
 .footer .contactsInfo .wrapperfoot .ukm {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .footer .contactsInfo .wrapperfoot .gitFig {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .footer .contactsInfo .mail {
@@ -310,4 +314,49 @@ body {
 .footer .contactsInfo .figmaIc {
   display: flex;
   flex-direction: row;
+}
+
+.html:hover {
+  transform: translateY(-5%);
+  cursor: pointer;
+}
+.html:hover .imgHtml {
+  fill: #FC490B;
+  cursor: pointer;
+}
+
+.css:hover {
+  transform: translateY(-5%);
+  cursor: pointer;
+}
+.css:hover .imgCss {
+  fill: #2965f1;
+  cursor: pointer;
+}
+
+.js:hover {
+  transform: translateY(-5%);
+  cursor: pointer;
+}
+.js:hover .imgJs {
+  fill: #F0DB4F;
+  cursor: pointer;
+}
+
+.scss:hover {
+  transform: translateY(-5%);
+  cursor: pointer;
+}
+.scss:hover .imgScss {
+  fill: #cc6699;
+  cursor: pointer;
+}
+
+.git:hover {
+  transform: translateY(-5%);
+  cursor: pointer;
+}
+.git:hover .imgGit {
+  fill: #f34f29;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
