@@ -20,25 +20,78 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
+
+    @media (max-width:1120px){
+        height: 450vh;
+
+    }
+
+    @media (max-width:670px){
+        height: 400vh;
+
+    }
+    @media (max-width:455px){
+        height: 450vh;
+
+    }
+
+
 }
 
+
+
 .nav{
+    width: 80%;
     height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 120px;
 
 
-    @media (max-width:1130px) {
+
+    @media (max-width:1120px) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
+    @media (max-width:670px){
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;      
+        align-items: center;
+
+    }
+
+    .hx{
+        width: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        visibility: hidden;
+
+        @media (max-width:670px){
+        visibility: visible;
+    }
+
+    .exit{
+        visibility: hidden;
+    }
+
+    }
+
+    .hamburger{
+        position: absolute;
+    }
 
     .menu{
+        @media (max-width:670px){
+            display: none;
+        }
+
 
         ul{
             
@@ -71,29 +124,66 @@ body{
 }
 
 .main{
-
+    width: 100%;
     height: 720px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     justify-content: space-evenly;
 
-    @media (max-width:1130px) {
-        height: 850px;
+    @media (max-width:1120px) {
+        height: 800px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
 
-    .bg{
+    @media (max-width:670px) {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
     }
+
+    @media (max-width:455px) {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    
+
+    }
+
+
+.bg{
+
+    width: 600px;
+
+    @media (max-width:670px){
+        width: 400px;
+    }
+
+    @media (max-width:455px){
+        width: 300px;
+    }
+}
 
     .namJob{
         
         width: 448.25px;
         height: 178.5px;
+
+        @media(max-width:670px){
+            
+            width: 350.25px;
+            height: 178.5px;
+        }
+        @media(max-width:455px){
+            
+            width: 300px;
+
+        }
 
     }
 
@@ -105,6 +195,11 @@ body{
         line-height: 67px;
         color: #FF8303;
 
+        @media(max-width:670px){
+            
+            font-size: 45px;
+        }
+
     }
 
     .job{
@@ -113,6 +208,11 @@ body{
         font-size: 40px;
         line-height: 42px;
         color: #F0E3CA; 
+
+        @media(max-width:670px){
+            
+            font-size: 30px;
+        }
 
     }
     
@@ -127,41 +227,86 @@ body{
 }
 
 
-.wrapper{
-
-    height: 1260.7px;
 
 
-.sec1{
 
+
+
+    .sec1{
+    width: 80%;
     height: 228.79px;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    @media (max-width:670px){
+        width: 80%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    @media (max-width:455px) {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+
     .logo{
 
-        position: relative;
-        right: 2%;
-        
+    height: 72px;
+    width: 71px;
+
     }
     
     .logoInfo{
-        width: 904px;
+        width: 90%;
         height: 76px;
         font-weight: 400;
         font-size: 24px;
         line-height: 25px;
         color: #F0E3CA;
+
+        @media (max-width:670px){
+            width: 80%;
+            height: 200px;
+    
+        }
+        @media (max-width:455px) {
+            height: 500px;
+    
+        }
+
     }
 
-}
+    }
 
 .sec2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     height: 494px;
+    width: 100%;
+
+
+    @media (max-width:1120px){
+        height: 1000px;
+
+    }
+
+    @media (max-width:670px){
+        height: 500px;
+
+    }
+
+
 
     
     .mySkills{
@@ -173,15 +318,40 @@ body{
     }
 
     .prog{
-        width: 1064px;
+        width: 1080px;
         height: 300px;
         display: flex;
         flex-direction: row;
-        margin: 0 auto;
         justify-content: space-between;
-        align-items: center;
 
-        div{
+
+        @media (max-width:1120px){
+            width: 640px;
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: space-evenly;
+            gap: 20px;
+
+        }
+
+        @media (max-width:670px){
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 380px;
+
+
+        }
+
+
+
+        .d{
             width: 200px;
             height: 300px;
             background: #161613;
@@ -191,11 +361,37 @@ body{
             justify-content: space-evenly;
             align-items: center;
 
+
+            @media (max-width:670px){
+                width: 280px;
+                height: 60px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+            }
+
+            svg{
+
+                @media (max-width:670px){
+                    width: 32px;
+                    height: 32px;
+    
+                }
+            }
+
+
             h1{
                 font-weight: 400;
                 font-size: 32px;
                 line-height: 37px;
                 color: #FFFFFF;
+
+                @media (max-width:670px){
+                    width: 160px;
+                    font-size: 24px;
+    
+                }
             }
 
         }
@@ -232,7 +428,17 @@ body{
     justify-content: space-evenly;
     align-items: center;
     height: 537.91px;
-    background-color: lightgreen;
+    width: 1000px;
+
+    @media (max-width:1120px){
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1100px;
+    }
+    
+
 
     .blogrec{
         width: 200px;
@@ -242,6 +448,8 @@ body{
 
     .b{
         cursor: pointer;
+        
+
         .wrapInfo{
             visibility: hidden;
             transform: translate( -20px, 0%);
@@ -252,8 +460,6 @@ body{
 
     .b:hover{
     
-
-
         .wrapInfo{
             visibility: visible;
             transform: translate(0px, 0%);
@@ -297,10 +503,19 @@ body{
 
     .wrapper2{
         height: 320px;
-        width: 100%;
+        width: 1000px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+
+        @media (max-width:1120px){
+            width: 320px;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
 
     }
 
@@ -322,17 +537,30 @@ body{
     }
     
 
-}
+
 
 
 
 .footer{
-    width: 100%;
+    width: 80%;
     height: 274px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+
+    @media (max-width:1080px){
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    @media (max-width:670px){
+        height: 600px;
+
+    }
     
 
         .nlogoInfo{
@@ -345,6 +573,8 @@ body{
             font-size: 20px;
             line-height: 21px;
             color: #F0E3CA;
+
+            
             
         }
 
@@ -353,6 +583,13 @@ body{
             flex-direction: column;
             justify-content: space-between;
             height: 146px;
+
+            @media (max-width:670px){
+                width: 100%;
+                height: 250px;
+                align-items: center;
+        
+            }
             
             p{
                 font-weight: 400;
@@ -374,16 +611,51 @@ body{
                 flex-direction: row;
                 justify-content: space-between;
 
+                @media (max-width:670px){
+                    width: 300px;
+                    height:180px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+            
+                }
+
+                p{
+                    @media(max-width:670px){
+                        width: 200px;
+                    }
+                }
+
                 .ukm{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    
+
+                    @media (max-width:670px){
+                        width: 250px;
+                        height:80px;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: space-between;
+                
+                    }
                 }
                 .gitFig{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
+
+                    @media (max-width:670px){
+                        height:80px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                
+                    }
                 }
 
             }
